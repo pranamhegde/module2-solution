@@ -1,3 +1,6 @@
+*{
+    margin: 0px;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
@@ -7,7 +10,11 @@ body{
     margin: auto;
 
 }
-
+h2.header-1,h2.header-2,h2.header-3{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-block-start: unset;
+}
 .header-1{
     background-color: green;
     width: 45%;
@@ -34,7 +41,9 @@ h1{
     text-align: center;
 }
 
-
+.col-4 p{
+    margin: 0 0 0 0;
+}
 
 .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
     border: 1px solid black;
@@ -47,6 +56,7 @@ h1{
 @media (min-width : 992px){
 
     .row{
+        position: relative;
         width: 100%;
         display: flex; /*Any element in the row can change size easily on different devices*/
         flex-direction: row;
