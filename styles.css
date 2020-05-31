@@ -1,0 +1,117 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+}
+.container{
+    margin: auto;
+
+}
+
+.header-1{
+    background-color: green;
+    width: 45%;
+    margin-left: 55%;
+    text-align: center;
+}
+
+.header-2{
+    background-color: red;
+    width: 35%;
+    margin-left: 65%;
+    text-align: center;
+
+}
+
+.header-3{
+    background-color: peachpuff;
+    width: 30%;
+    margin-left: 70%;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+}
+
+
+
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    border: 1px solid black;
+    background-color:gray;
+    margin: 1%;
+   
+}
+/*############# Normal View ######################*/
+
+@media (min-width : 992px){
+
+    .row{
+        width: 100%;
+        display: flex; /*Any element in the row can change size easily on different devices*/
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0;
+       
+        
+    }
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width:41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width:91.66%;}
+    .col-12{width: 100%;}
+
+
+
+}
+
+
+
+/*############ Tablet View ########################*/
+@media (min-width: 768px) and (max-width: 991px){
+
+    .row{
+        width: 100%;
+      
+        padding-top: 0;
+    }
+  
+
+    .col-1,.col-2,.col-3,.col-4{
+        width: 47%;
+        max-width: 100%;
+        box-sizing: border-box;
+        display: inline-block;   /*Best method for horziontal alignment.*/
+       
+    }
+
+    #sushi{
+        width: 96.5%;
+        margin: 1%;
+    }
+
+    .col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        min-width: 50%;
+        display: inline-block;
+    } 
+
+}
+
+
+/*############ Mobile View ########################*/
+@media (max-width:767px){
+    .header-1,.header-2,.header-3{
+        width: 35%;
+        margin-left: 65%;
+    }
+    .col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        width: 100%;
+    }
+}
